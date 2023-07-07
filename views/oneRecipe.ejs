@@ -1,0 +1,12 @@
+<h1><%= title %></h1>
+
+<p><%= cookingTime %> minutes</p>
+<p><%= difficulty %> minutes</p>
+
+<hr />
+
+<ul>
+  <% ingredients.forEach(ingredient => { %>
+  <li><%= ingredient %></li>
+  <% }) %>
+</ul>

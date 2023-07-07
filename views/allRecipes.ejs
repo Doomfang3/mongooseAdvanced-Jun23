@@ -1,0 +1,12 @@
+<h1>Garfield's Recipes</h1>
+<form method="GET" action="/">
+  <label>
+    <input name="searchTerm" />
+  </label>
+  <button type="submit">Search</button>
+</form>
+<ul>
+  <% recipes.forEach(currentRecipe => { %>
+  <li><a href="/<%- currentRecipe._id %>"><%= currentRecipe.title %></a></li>
+  <% }) %>
+</ul>
